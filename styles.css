@@ -1,9 +1,4 @@
-/* 
-
-      This space intentionally left blank.
-
-*/
-@import url('https://fonts.googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -11,11 +6,11 @@ body {
   padding: 0px;
 }
 
-.header {
+.header, .bluebody {
   display: flex;
   background-color: #1F2937;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
   padding: 16px;
 }
 
@@ -38,4 +33,27 @@ ul {
   gap: 18px;
   padding: 0;
   margin: 0;
+  justify-content: space-between;
+}
+
+.bbtext {
+  display: flex;
+  font-size: 18px;
+  color: #E5E7EB;
+  flex-direction: column;
+}
+
+.heromain {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
+button {
+  background-color: #3882d6;
+  font-size: 18px;
+  color: #E5E7EB;
+  box-shadow: none;
+  border-radius: 8px;
+  border: 0;
 }
