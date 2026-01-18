@@ -10,8 +10,24 @@ body {
   display: flex;
   background-color: #1F2937;
   align-items: center;
+  justify-content: space-around; 
+  padding: 8px;
+  height: 24px;
+}
+
+.bluebody {
+  padding: 8px;
+  height: 300px;
+}
+
+.bbtext {
+  display: flex;
+  font-size: 18px;
+  color: #E5E7EB;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 16px;
+  gap: 8px;
+  width: 500px;
 }
 
 .herologo {
@@ -29,22 +45,15 @@ a, li {
 
 ul {
   display: flex;
-  justify-content: flex-end;
   gap: 18px;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
 }
 
-.bbtext {
-  display: flex;
-  font-size: 18px;
-  color: #E5E7EB;
-  flex-direction: column;
-}
+
 
 .heromain {
-  font-size: 48px;
+  font-size: 38px;
   color: #F9FAF8;
   font-weight: 900;
 }
@@ -54,6 +63,13 @@ button {
   font-size: 18px;
   color: #E5E7EB;
   box-shadow: none;
-  border-radius: 8px;
+  border-radius: 4px;
   border: 0;
+  align-self: flex-start;
+  padding: 8px;
+  width: 100px;
+}
+
+img {
+  width: 175px;
 }
