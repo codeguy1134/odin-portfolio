@@ -1,11 +1,14 @@
-function createParagraph() {
-  const para = document.createElement("p");
-  para.textContent = "You clicked the button!";
-  document.body.appendChild(para);
-}
+const btn = document.querySelector("button");
+const txt = document.querySelector("p");
 
-const buttons = document.querySelectorAll("button");
+btn.addEventListener("click", updateBtn);
 
-for (const button of buttons) {
-  button.addEventListener("click", createParagraph);
+function updateBtn() {
+  if (btn.textContent === "Start machine") {
+    btn.textContent = "Stop machine";
+    txt.textContent = "The machine has started!";
+  } else {
+    btn.textContent = "Start machine";
+    txt.textContent = "The machine is stopped.";
+  }
 }
