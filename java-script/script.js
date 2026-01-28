@@ -1,14 +1,12 @@
-const btn = document.querySelector("button");
-const txt = document.querySelector("p");
+// this script is just for learning js
 
-btn.addEventListener("click", updateBtn);
 
-function updateBtn() {
-  if (btn.textContent === "Start machine") {
-    btn.textContent = "Stop machine";
-    txt.textContent = "The machine has started!";
-  } else {
-    btn.textContent = "Start machine";
-    txt.textContent = "The machine is stopped.";
-  }
-}
+
+// still starting on line 6. fight me.
+const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+
+textBox.addEventListener("keydown", (event) => {
+  output.textContent = `You pressed "${event.key}", bitch.`;
+
+});
