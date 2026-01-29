@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <script src="script.js" defer></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Variables and Operators</title>
-</head>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="script.js" defer></script> -->
+    <title>Javascript Shenanigans</title>
+  </head>
 
 <body>
-  <p>Some text to check styling. We stylin' fam.</p>
+<h1>Here's some header text.</h1>
+<script>
 
-<input id="textBox" type="text" />
-<div id="output"></div>
+ const string = "ABCDE"
+
+ function caps(string) {
+  const newString = string.toLowerCase();
+
+  const finalString = newString.charAt(0).toUpperCase() + newString.slice(1);
+
+  alert(finalString);
+ }
+
+ caps(string);
+
+
+ 
+
+
+
+//  console.log(string);
+
+</script>
 
 </body>
 </html>

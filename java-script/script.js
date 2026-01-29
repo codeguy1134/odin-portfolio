@@ -3,10 +3,8 @@
 
 
 // still starting on line 6. fight me.
-const textBox = document.querySelector("#textBox");
-const output = document.querySelector("#output");
+function fn() {
+  fn();
+}
 
-textBox.addEventListener("keydown", (event) => {
-  output.textContent = `You pressed "${event.key}", bitch.`;
-
-});
+fn();
